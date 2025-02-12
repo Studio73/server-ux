@@ -114,7 +114,7 @@ class TestMixin:
 
     def _test_ACL_values(self, model_id):
         values = {
-            "name": "Fake ACL for %s" % self._name,
+            "name": f"Fake ACL for {self._name}",
             "model_id": model_id,
             "perm_read": 1,
             "perm_create": 1,
